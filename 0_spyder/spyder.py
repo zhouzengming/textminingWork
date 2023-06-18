@@ -13,7 +13,7 @@ def spy_news(year,month,day):
     options = webdriver.FirefoxOptions()
     # options.add_argument("--headless")  # 无头模式，不打开浏览器窗口
     options.binary_location = '/mnt/cgshare/firefox/firefox'  # 设置Chromium浏览器的二进制路径
-    geckodriver_path = '/root/PycharmProjects/pythonProject/geckodriver'
+    geckodriver_path = './utils/geckodriver'
     driver = webdriver.Firefox(options=options, executable_path=geckodriver_path)  # 指定Chromium WebDriver的路径
 
     # 创建Chrome浏览器实例
